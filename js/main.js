@@ -18,7 +18,7 @@ $(document).ready(function(){
         }
         
         
-        result = parseFloat(output / (input * resolution)).toFixed(2);
+        result = parseFloat((output / (input * resolution)) * 100).toFixed(2);
         
         $('#result span').html(result);
         
