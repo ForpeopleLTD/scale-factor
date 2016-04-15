@@ -6,13 +6,13 @@ $(document).ready(function(){
         
         e.preventDefault();
         
-        var output      = $('#output input').val(), 
-            input       = $('#input input').val(), 
+        var output      = $('#output').val(), 
+            input       = $('#input').val(), 
             resolution;
         
         
-        if ($('#resolution input').val()){
-            resolution = $('#resolution input').val();
+        if ($('#resolution').val()){
+            resolution = $('#resolution').val();
         } else {
             resolution = 0.3533;
         }
@@ -20,7 +20,7 @@ $(document).ready(function(){
         
         result = parseFloat((output / (input * resolution)) * 100).toFixed(2);
         
-        $('#result span').html(result);
+        $('#result').html(result);
         
         
     });

@@ -24,32 +24,17 @@
         <div class="container">
             
             <form id="calculator">
-                <div id="output">
-                    <label>Desired Output</label>
-                    <input type="number" required step="any"> mm
-                </div>
                 
-                <div>
+                    If my print output is <input type="text" required step="any" id="output">mm and my original input size is 
+                    <input type="text" required step="any" id="input">px with a resolution of <input type="text" step="any" placeholder="0.3533" id="resolution">
                 
-                <div id="input">
-                    <label>Input Size</label>
-                    <input type="number" required step="any"> px
-                </div>
-                
-                <div id="resolution">
-                    <label>Resolution</label>
-                    <input type="number" step="any" placeholder="0.3533">
-                </div>
-                    
-                </div>
-                
-                <button id="submit">Submit</button>
+                    , <button id="submit">What is my scalling factor?</button>
                 
             </form>
             
             <div id="result">
-                Scale Factor
-                <span></span>
+
+            
             </div>
             
         </div>
