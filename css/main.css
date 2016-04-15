@@ -283,14 +283,19 @@ textarea {
 
 
 input {
- padding: 10px 0;
+ padding: 0;
  display: inline-block;
  font-size: 34px;
  border: none;
- border-bottom: solid 1px #999;
+/* border-bottom: solid 1px #999;*/
  width: 110px;
  color: #000;
     font-weight: 500;
+}
+
+#input,
+#output {
+    width: 92px;
 }
 
 form {
@@ -300,17 +305,18 @@ form {
 }
 
 button {
-    display: inline-block;
+    display: inline;
 /*    font-size: 34px;*/
     background-color: #fff;
     border: none;
-    color: #2481A6;
-    padding: 10px 20px;
-    margin-top: 5px;
+/*    color: #2481A6;*/
+/*    padding: 10px 20px;*/
+/*    margin-top: 5px;*/
     font-weight: 500;
+    text-decoration: underline;
 }
 button:hover {
-    color: #124559;
+    text-decoration: none;
 }
 
 
@@ -329,7 +335,5 @@ input:focus, button:focus {
 
 
     margin: 20px 0;
-
-
-        font-size: 60px;
+font-size: 60px;
     }
