@@ -330,10 +330,19 @@ input:focus, button:focus {
     margin: 40px auto;
 }
 
+.results {
+    color: #000;
+    margin-top: 20px;
+    font-size: 34px;
+}
 
 #result {
-
+font-weight: 600;
+    font-size: 44px;
+    color: #000;
+/*
 
     margin: 20px 0;
 font-size: 60px;
+*/
     }
