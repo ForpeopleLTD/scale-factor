@@ -23,6 +23,7 @@ $(document).ready(function(){
         if ($(this).val().length > 0){
             inputWidth = parseInt($(this).val().length * characterWidth);
             $(this).width(inputWidth);
+            
         } else {
             $(this).attr('style', '');
         }
@@ -37,6 +38,7 @@ $(document).ready(function(){
                 resolution = 0.3533;
             }
             result = parseFloat((output / (input * resolution)) * 100).toFixed(2);
+            $('.results').css('opacity', 1);
             $('#result').html(result);
         }
         
