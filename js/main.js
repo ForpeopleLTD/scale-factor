@@ -14,7 +14,20 @@ $(document).ready(function(){
     });
     
     $('input').on('hange keydown paste input', function(){
-        var inputWidth = parseInt($(this).val().length * 20);
-        $(this).width(inputWidth);
+        
+        
+        
+        var inputWidth;
+        var characterWidth = 20;
+        
+        if ($(this).val().length > 0){
+            inputWidth = parseInt($(this).val().length * characterWidth);
+            $(this).width(inputWidth);
+        } else {
+            $(this).attr('style', '');
+        }
+        
+        
+        
     });
 });
